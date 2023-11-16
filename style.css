@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster';
+}
+
+header {
+    padding: 25px 50px;
+    background-image: url("зз.jpg");
+    background-position-y: -200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+h1 {
+    text-shadow: 6px 4px 2px rgba(255,255,255,0.6);
+    color: rgb(83, 44, 17);
+}
+
+header > p {
+    font-size: 25px;
+    color: wheat;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    padding: 50px 100px;
+}
+section:nth-child(1) {
+    grid-row: span 2;
+}
+section:nth-child(2) {
+    grid-row: span 3;
+}
+section:nth-child(3) {
+    margin-top: 25px;
+    grid-column: span 2;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgb(212, 151, 29);
+
+}
+h3 {
+    font-size: 24px;
+    color: rgb(83, 44, 17);
+
+
+}
+p {
+    font-size: 20px;
+    color: rgb(142, 74, 25);
+
+}
+section:nth-child(2) > section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+section:nth-child(3) > section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+span {
+    font-size: inherit !important;
+    color: brown;
+}
+
+@media (max-width: 716px) {
+   * {
+    grid-template-columns: 1fr !important;
+    }
+    main {
+        display: block
+    };
+    h2 {
+        margin: 25px 0;
+    }
+    header > img {
+        margin: 0 auto;
+    }
+    h1 {
+        color: rgb(212, 151, 29) ;
+        text-shadow: 6px 4px 2px rgba(255, 255, 255, 0.151);
+    }
+}
+ 
